@@ -8,11 +8,11 @@ before_install:
 
 install:
    - sudo apt-get install --force-yes premake4
-   - sudo apt-get install -qq gcc-4.8
-   - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 100
-   - sudo update-alternatives --config gcc
+   - sudo apt-get install -qq g++-4.8
+   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 100;
+   - sudo update-alternatives --config g++;
 before_script:
-   - gcc -v
+   - g++ -v
    - premake4 gmake
 script:
    - make verbose=true
