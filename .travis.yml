@@ -1,0 +1,10 @@
+language: cpp
+
+install: sudo apt-get install --force-yes make premake4
+
+compiler:
+  - gcc
+before_script:
+   - premake4 gmake
+script:
+   - make
