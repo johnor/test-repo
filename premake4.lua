@@ -12,4 +12,7 @@ solution "Test"
  
       configuration "Release"
          defines { "NDEBUG" }
-         flags { "Optimize" }    
+         flags { "Optimize" }
+
+      configuration { "gmake" }
+         buildoptions { "-std=c++11" }
