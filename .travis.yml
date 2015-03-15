@@ -15,4 +15,5 @@ before_script:
    - gcc -v
    - premake4 gmake
 script:
-   - make && ./Test
+   - make verbose=true
+   - ./Test
