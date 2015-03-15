@@ -12,4 +12,4 @@ compiler:
 before_script:
    - premake4 gmake
 script:
-   - make
+   - make && ./Test
